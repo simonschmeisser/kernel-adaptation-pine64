@@ -130,6 +130,7 @@ cp %{source_directory}/arch/%{kernel_arch}/boot/zImage %{buildroot}/boot/zImage
 for dtb in %{devicetrees}; do
 	mkdir -p %{buildroot}/boot/$(basename $(dirname $dtb))
 	cp %{source_directory}/arch/%{kernel_arch}/boot/dts/$dtb %{buildroot}/boot/$dtb
+	cp %{buildroot}/boot/*/*.dtb %{buildroot}/boot/
 done
 %endif
 
