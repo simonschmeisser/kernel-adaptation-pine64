@@ -31,17 +31,6 @@
 ##define build_zImage 1
 
 # Build and pick-up the following devicetrees
-%define devicetrees allwinner/sun50i-a64-pinephone-1.0.dtb allwinner/sun50i-a64-pinephone-1.1.dtb allwinner/sun50i-a64-pinephone-1.2.dtb allwinner/sun50i-a64-pinetab.dtb
-
-Patch0:  0002-dts-add-pinetab-dev-old-display-panel.patch
-Patch1:  0007-dts-pinetab-make-audio-routing-consistent-with-pinep.patch
-Patch2:  0008-pinetab-bluetooth.patch
-
-%prep
-cd linux/
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-cd ..
+%define devicetrees allwinner/sun50i-a64-pinephone-1.0.dtb allwinner/sun50i-a64-pinephone-1.1.dtb allwinner/sun50i-a64-pinephone-1.2.dtb allwinner/sun50i-a64-pinetab.dtb allwinner/sun50i-a64-pinetab-dev.dtb
 
 %include kernel-adaptation-simplified/kernel-adaptation-simplified.inc
