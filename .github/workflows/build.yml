@@ -26,7 +26,7 @@ jobs:
       id: build_i486
       uses: coderus/github-sfos-build@master
       with:
-        release: 3.4.0.24
+        release: 3.4.0.22
 
     - name: Upload build result
       uses: actions/upload-artifact@v2
