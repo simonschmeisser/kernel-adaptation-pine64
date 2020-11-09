@@ -59,6 +59,7 @@ BuildRequires:  fdupes
 BuildRequires:  flex
 BuildRequires:  bison
 BuildRequires:  bc
+BuildRequires:  m4
 %if 0%{?crossbuild:1}
 BuildRequires:  cross-%{crossbuild}-gcc
 BuildRequires:  cross-%{crossbuild}-binutils
