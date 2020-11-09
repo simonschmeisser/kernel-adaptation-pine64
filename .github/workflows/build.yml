@@ -21,6 +21,9 @@ jobs:
 
     - name: Prepare
       run: mkdir output
+      
+    - name: Checkout git submodules
+      run: git submodule init && git submodule update 
 
     - name: Build i486
       id: build_i486
